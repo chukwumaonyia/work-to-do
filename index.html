@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> WHAT TO DO APP</title>
+    <link rel="stylesheet" href="NOT.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    body{
+        background-image:url('image/bg4.jpg');
+        text-align: center;
+       background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 30s;
+    animation-name: change;
+}
+    
+    @keyframes change{
+    0%
+    { background-image: url(image/bg1.jpg); background-repeat: no-repeat; background-size: cover;}
+    50%
+    {background-image: url(image/bg2.jpeg); background-repeat: no-repeat; background-size: cover;}
+    100%
+    {background-image: url(image/bg3.webp); background-repeat: no-repeat; background-size: cover;}
+}
+    
+</style>
+<body>
+    <div>
+        <div class="intro">
+            <h1> WORK TO DO</h1>
+        </div>
+
+
+        <div>
+            <p id="first"> Enter text into the input field to add items to your list</p>
+            <p id="second"> Click the item to mark it as complete</p>
+            <p id="third">Click the "X" to remove the item from the list</p>
+        </div>
+        <div>
+            <input id="userInput" maxlength="27" placeholder="new item" />
+            <button id="enter"><i class="fa fa-pencil"></i></button>
+        </div>
+        <div>
+            <ul>
+            
+        
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+<script src="script.js"> </script>
+
+</html>
